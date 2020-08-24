@@ -2,6 +2,9 @@ intents:
   - greet
   - goodbye
   - corona_state
+  - coronainfo
+  - coronaprevention
+  - coronaspread
 
 actions:
  - action_corona_state
@@ -11,23 +14,25 @@ entities:
  
 responses:
   utter_greet:
-  - text: "Hey! I am sample RASA Bot to show you current No. of Corona cases in India and it's states. Please enter a State Name:"
+  - text: "¡Oye! Soy un bot de muestra de RASA para mostrarles el número actual de casos de Corona en América Latina. Ingrese un nombre de país"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  
 
   utter_goodbye:
-  - text: "Good Bye"
+  - text: "Adiós"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_coronainfo:
+  - text: "El virus corona causa la enfermedad del covid-19. En el cual, 'CO' significa corona, 'VI' para virus y 'D' para enfermedad. Anteriormente, esta enfermedad se denominaba 'nuevo coronavirus de 2019' o '2019-nCoV'."
+
+  utter_coronaspread:
+  - text: "El virus COVID-19 se transmite principalmente a través de gotitas de saliva o secreciones nasales cuando una persona infectada tose o estornuda."
+
+  utter_coronaprevention:
+  - text: "Lávese las manos regularmente con agua y jabón o límpielas con un desinfectante para manos a base de alcohol.
+  Mantenga al menos 1 metro de distancia entre usted y las personas que tosen o estornudan.
+  Cúbrase la boca y la nariz al toser o estornudar.
+  Practica el distanciamiento físico evitando viajes innecesarios y manteniéndote alejado de grandes grupos de personas."
+
 
 session_config:
   session_expiration_time: 60
